@@ -251,7 +251,7 @@ address {
 /*===================/BENEFITS================ */
 
 /* ============== WHAT ARE WE DOING ========== */
-.portfolio-list {
+.portfolio-list-w {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
@@ -280,11 +280,8 @@ address {
 }
 
 .team-list-item {
-    width: calc((100% - 3*24px) / 4);
+    width: calc((100% - 72px) / 4);
     background-color: var(--background-color);
-    text-align: center;
-    
-    
 }
 
 .img-team {
@@ -368,7 +365,11 @@ address {
     gap: 24px;
     justify-content: center;
 }
-.portfolio-list
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
 
 .portfolio-type {
     line-height: 1.5;
@@ -381,6 +382,11 @@ address {
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     border-bottom: 1px solid #e7e9fc;
+}
+
+.cell-t {
+    text-align: center;
+    padding: 32px 0;
 }
 
 .visually-hidden {
