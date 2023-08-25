@@ -5,12 +5,44 @@
     --text-color: #2E2F42;
     --hover-color: #404BBF;
     --button-background: #F4F4FD;
+    --cornflower: #e7e9fc;
+
 }
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: var(--background-color);
 }
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, 
+ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+}
+
 
 .list {
     list-style-type: none;
@@ -29,9 +61,34 @@ address {
 }
 
 
+
 /*========= HEADER ===========*/
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.social-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+    
+}
+
+.list-header-fl {
+    display: flex;
+    column-gap: 24px;
+    margin-left: 76px;
+}
 .logotype {
     color: var(--logo-blue);
     font-family: 'Raleway', sans-serif;
@@ -41,6 +98,7 @@ address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
 }
 
 
@@ -86,17 +144,14 @@ address {
 }
 
 
-
-
-
-
 /*========= /HEADER ===========*/
 
 
 
-/*===index====*/
+/*==========HERO===========*/
 .hero {
     background-color: var(--text-color);
+    height: 600px;
 }
 
 .h-three-headers {
@@ -108,7 +163,8 @@ address {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
-}
+    margin-bottom: 8px;
+    }
 
 .hero-heading {
     color: var(--background-color);
@@ -119,10 +175,15 @@ address {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    padding-top: 188px;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .cta-btn {
+    display: block;
     color: var(--background-color);
     background: var(--logo-blue);
     text-align: center;
@@ -132,6 +193,13 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 16px 32px;
+  
 }
 
 
@@ -142,12 +210,24 @@ address {
     background-color: var(--hover-color);
 
 }
+/*=================== /HERO ================== */
 
+
+/*===================BENEFITS================ */
+/* .benefits { 
+    
+ } */
+.benefits-list {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+}
 
 .p-of-section {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--bodycolor);
+    margin-bottom: 32px;
 }
 
 .second-heading {
@@ -157,19 +237,60 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--text-color);
+    margin-bottom: 72px;
 
 }
+/*===================/BENEFITS================ */
 
+/* ============== WHAT ARE WE DOING ========== */
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+}
+
+.product-img {
+    width: calc((100% - 2*24px) / 3);
+}
+
+/* ============== /WHAT ARE WE DOING ========== */
+
+/* ============== OUR TEAM ============== */
+
+.our-team-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 24px;
+}
 .section-team {
     background-color: var(--button-background);
+    padding-top: 60px;
+    padding-bottom: 120px;
 }
 
 .team-list-item {
     background-color: var(--background-color);
+    width: calc((100% - 3*24px) / 4);
+    text-align: center; 
 }
 
+.img-team {
+    margin-bottom: 32px;
+}
+
+/* ============== /OUR TEAM ============== */
 
 
+/* ============== FOOTER ================= */
+.footer-item {
+    padding: 100px 0;
+}
+
+.foot-link {
+    margin-bottom: 16px;
+}
 
 .footer-text {
     line-height: 1.5;
@@ -177,6 +298,11 @@ address {
     letter-spacing: 0.02em;
     background-color: var(--text-color);
 }
+.footer-text-item {
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
 
 .h-two-headers {
     font-weight: 500;
@@ -184,7 +310,7 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--text-color);
-
+    margin-bottom: 8px;
 }
 
 
@@ -198,6 +324,13 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    display: flex;
+    padding: 12px 24px;
+    align-items: flex-start;
+    border-radius: 4px;
+    border: 1px solid var(--cornflower, #e7e9fc);
+    background: var(--button-background, #f4f4fd);
+
 }
 
 
@@ -206,4 +339,28 @@ address {
 .portfolio-btn:focus {
     color: var(--background-color);
     background-color: var(--hover-color);
+}
+
+/* ============== /FOOTER ================= */
+
+/* ========== PAGE PORTFOLIO =============== */
+.portfolio-buttons {
+    margin-top: 96px;
+    margin-bottom: 72px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.portfolio-type {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--bodycolor);
+}
+
+.cell {
+    padding: 32px 16px;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    border-bottom: 1px solid #e7e9fc;
 }
