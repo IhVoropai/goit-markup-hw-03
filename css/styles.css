@@ -254,8 +254,7 @@ address {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 24px;
+    gap: 48px 24px;
 }
 
 .product-img {
@@ -271,16 +270,21 @@ address {
     flex-wrap: wrap;
     align-items: baseline;
     gap: 24px;
+    
 }
 .section-team {
     background-color: var(--button-background);
     padding: 120px 0;
-    width: calc((100% - 3*24px) / 4);
+    
+   
 }
 
 .team-list-item {
+    width: calc((100% - 3*24px) / 4);
     background-color: var(--background-color);
-    text-align: center; 
+    text-align: center;
+    
+    
 }
 
 .img-team {
@@ -353,13 +357,18 @@ address {
 /* ============== /FOOTER ================= */
 
 /* ========== PAGE PORTFOLIO =============== */
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .portfolio-buttons {
     margin-top: 96px;
-    margin-bottom: 120px;
+    margin-bottom: 72px;
     display: flex;
     gap: 24px;
     justify-content: center;
 }
+.portfolio-list
 
 .portfolio-type {
     line-height: 1.5;
