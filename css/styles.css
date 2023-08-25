@@ -275,11 +275,11 @@ address {
 .section-team {
     background-color: var(--button-background);
     padding: 120px 0;
+    width: calc((100% - 3*24px) / 4);
 }
 
 .team-list-item {
     background-color: var(--background-color);
-    width: calc((100% - 3*24px) / 4);
     text-align: center; 
 }
 
