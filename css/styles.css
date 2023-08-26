@@ -251,6 +251,10 @@ address {
 /*===================/BENEFITS================ */
 
 /* ============== WHAT ARE WE DOING ========== */
+.products {
+    padding-bottom: 120px;
+}
+
 .portfolio-list-w {
     display: flex;
     flex-wrap: wrap;
@@ -274,7 +278,7 @@ address {
 }
 .section-team {
     background-color: var(--button-background);
-    padding-bottom: 120px;
+    padding: 120px 0;
     
    
 }
