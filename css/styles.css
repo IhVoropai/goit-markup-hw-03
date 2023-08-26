@@ -274,7 +274,7 @@ address {
 }
 .section-team {
     background-color: var(--button-background);
-    padding: 120px 0;
+    padding-bottom: 120px;
     
    
 }
